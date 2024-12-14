@@ -1,2 +1,2 @@
-$storageAcct = '<storageAccount>'
+$storageAcct = '<storageAccount>' # Update the storage account of your Azure here, not in the below
 (Get-Content training-images/training_labels.json) -replace '<storageAccount>', $storageAcct | Out-File training-images/training_labels.json
